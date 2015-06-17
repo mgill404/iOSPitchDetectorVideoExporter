@@ -1,0 +1,20 @@
+-x
+c
+-arch
+armv7
+-std=c99
+-fpascal-strings
+-O0
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk
+-g
+-miphoneos-version-min=8.3
+-iquote
+-iquote
+-I/Users/Marko/Downloads/dywapitchtrack/iPhone/Build/Products/Debug-iphoneos/include
+-I../src
+-F/Users/Marko/Downloads/dywapitchtrack/iPhone/Build/Products/Debug-iphoneos
+arm-apple-darwin14.3.0
+"4.2.1 Compatible Apple LLVM 6.1.0 (clang-602.0.53)"
+SDK_PRODUCT_BUILD_VERSION=12F69
+12F69

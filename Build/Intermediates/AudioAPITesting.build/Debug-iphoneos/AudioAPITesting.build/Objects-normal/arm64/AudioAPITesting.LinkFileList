@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+/Users/Marko/Edify/AudioAPITesting/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/SSEVideoExporter.o
+/Users/Marko/Edify/AudioAPITesting/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/dywapitchtrack.o
+/Users/Marko/Edify/AudioAPITesting/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/SSEEnvelopeDetector.o
+/Users/Marko/Edify/AudioAPITesting/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/ViewController.o
+/Users/Marko/Edify/AudioAPITesting/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/AppDelegate.o
+/Users/Marko/Edify/AudioAPITesting/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/SSEPitchDetector.o
+/Users/Marko/Edify/AudioAPITesting/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/main.o
+/Users/Marko/Edify/AudioAPITesting/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/SSEPlaythroughChannel.o
+=======
+/Users/Marko/Edify/TestGit/PitchDetectionVideoExporter/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/SSEVideoExporter.o
+/Users/Marko/Edify/TestGit/PitchDetectionVideoExporter/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/dywapitchtrack.o
+/Users/Marko/Edify/TestGit/PitchDetectionVideoExporter/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/SSEEnvelopeDetector.o
+/Users/Marko/Edify/TestGit/PitchDetectionVideoExporter/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/ViewController.o
+/Users/Marko/Edify/TestGit/PitchDetectionVideoExporter/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/AppDelegate.o
+/Users/Marko/Edify/TestGit/PitchDetectionVideoExporter/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/SSEPitchDetector.o
+/Users/Marko/Edify/TestGit/PitchDetectionVideoExporter/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/main.o
+/Users/Marko/Edify/TestGit/PitchDetectionVideoExporter/Build/Intermediates/AudioAPITesting.build/Debug-iphoneos/AudioAPITesting.build/Objects-normal/arm64/SSEPlaythroughChannel.o
+>>>>>>> 6b522d0d6a43246b9a37e0c9337858d68b797a66

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
+	<string>9BB0F9F8-A260-47B4-9AAF-44F494A12085</string>
+=======
+	<string>09BEC769-E0F9-437B-8376-CE7D7535C388</string>
+>>>>>>> 6b522d0d6a43246b9a37e0c9337858d68b797a66
+	<key>IDESourceControlProjectName</key>
+	<string>AudioAPITesting</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5CA46AE4887214B7B3D486BBE13D8FE1C64A1DA9</key>
+		<string>https://github.com/mgill404/PitchDetectionVideoExporter.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AudioAPITesting.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5CA46AE4887214B7B3D486BBE13D8FE1C64A1DA9</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mgill404/PitchDetectionVideoExporter.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5CA46AE4887214B7B3D486BBE13D8FE1C64A1DA9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5CA46AE4887214B7B3D486BBE13D8FE1C64A1DA9</string>
+			<key>IDESourceControlWCCName</key>
+<<<<<<< HEAD
+			<string>AudioAPITesting</string>
+=======
+			<string>PitchDetectionVideoExporter</string>
+>>>>>>> 6b522d0d6a43246b9a37e0c9337858d68b797a66
+		</dict>
+	</array>
+</dict>
+</plist>
