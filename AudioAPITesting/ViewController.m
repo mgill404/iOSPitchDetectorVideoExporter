@@ -13,8 +13,6 @@
 #import "SSEPlaythroughChannel.h"
 #import "SSEPitchDetector.h"
 #import "AERecorder.h"
-#import "AKMonoFileInput.h"
-#import "AKFoundation.h"
 #import "dywapitchtrack.h"
 
 @interface ViewController ()
@@ -36,8 +34,6 @@
     AEAudioFilePlayer *_tonePlayer;
     AEChannelGroupRef toneChannel;
     SSEPitchDetector *_toneTracker;
-    
-    AudioFilePlayer *_audioFilePlayer;
     
     NSString  *_recordedFilePath;
     
