@@ -6,7 +6,7 @@ a regular interval of 60 Hz. This video can then be combined with an audio file.
 
 ## TO RUN
 
-Navigate to the 
+Navigate to the directory in terminal and type "pod install"
 
 ## Using the Pitch Tracking
 
