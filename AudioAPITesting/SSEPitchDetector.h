@@ -13,4 +13,8 @@
 
 - (id) initWithAudioController:(AEAudioController *)audioController;
 
+- (int) midiNumberFromFrequency:(float) frequency;
+
+- (NSString*) noteAndOctaveFromMidiNumber:(int)midiNumber;
+
 @end

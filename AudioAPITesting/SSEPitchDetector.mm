@@ -14,6 +14,7 @@
 {
     dywapitchtracker _pitchTracker;
     SSEEnvelopeDetector _envelopeDetector;
+    NSArray* _noteNames;
 }
 @end
 
@@ -24,6 +25,7 @@
     self = [super init];
     if(self)
     {
+        _noteNames = [[NSArray alloc] initWithObjects:@"C",@"Db",@"D",@"Eb",@"E",@"F",@"Gb",@"G",@"Ab",@"A",@"Bb",@"B",nil];
         dywapitch_inittracking(&_pitchTracker);
         _envelopeDetector.init(audioController.audioDescription.mSampleRate, 20, 20, false, 0, false);
     }
@@ -49,10 +51,23 @@ static void receiverCallback(__unsafe_unretained SSEPitchDetector *THIS,
         if(envelope > 0.01)
         {
             pitch = pitchEstimate;
-            NSLog(@"Rec. Pitch: %f", pitch);
+            // NSLog(@"Rec. Note: %f", pitch);
+            NSLog(@"Rec. Note: %@", [THIS noteAndOctaveFromMidiNumber:[THIS midiNumberFromFrequency:pitch]]);
         }
     }
 }
+
+- (int) midiNumberFromFrequency:(float) frequency
+{
+    return roundf(12*log2(frequency/440) + 69);
+}
+
+- (NSString*) noteAndOctaveFromMidiNumber:(int)midiNumber
+{
+    int octave = int (midiNumber / 12) - 1;
+    return [NSString stringWithFormat:@"%@%d",[_noteNames objectAtIndex:midiNumber%12],octave];
+}
+
 -(AEAudioControllerAudioCallback)receiverCallback
 {
     return (AEAudioControllerAudioCallback) receiverCallback;

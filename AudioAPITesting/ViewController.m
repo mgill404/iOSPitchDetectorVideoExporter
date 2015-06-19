@@ -143,7 +143,7 @@
     toneChannel = [_audioController createChannelGroup];
     [_audioController addChannels:@[_tonePlayer] toChannelGroup:toneChannel];
     
-    _toneTracker = [[SSEPitchDetector alloc] init];
+    _toneTracker = [[SSEPitchDetector alloc] initWithAudioController:_audioController];
     [_audioController addOutputReceiver:_toneTracker forChannelGroup:toneChannel];
     
     // Video Exporter
