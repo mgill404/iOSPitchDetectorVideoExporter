@@ -9,6 +9,7 @@
 #import "SSEPitchDetector.h"
 #import "SSEEnvelopeDetector.h"
 #import "dywapitchtrack.h"
+#import "stdio.h"
 
 @interface SSEPitchDetector ()
 {
@@ -51,8 +52,10 @@ static void receiverCallback(__unsafe_unretained SSEPitchDetector *THIS,
         if(envelope > 0.01)
         {
             pitch = pitchEstimate;
+            char note[4];
             // NSLog(@"Rec. Note: %f", pitch);
-            NSLog(@"Rec. Note: %@", [THIS noteAndOctaveFromMidiNumber:[THIS midiNumberFromFrequency:pitch]]);
+            noteAndOctaveFromMidiNumber(midiNumberFromFrequency(pitch), note);
+            NSLog(@"Rec. Note: %c%c%c%c\n", note[0],note[1],note[2],note[3]);
         }
     }
 }
@@ -64,8 +67,27 @@ static void receiverCallback(__unsafe_unretained SSEPitchDetector *THIS,
 
 - (NSString*) noteAndOctaveFromMidiNumber:(int)midiNumber
 {
-    int octave = int (midiNumber / 12) - 1;
+    int octave = (midiNumber / 12) - 1;
     return [NSString stringWithFormat:@"%@%d",[_noteNames objectAtIndex:midiNumber%12],octave];
+}
+
+int midiNumberFromFrequency(float frequency)
+{
+    return roundf(12*log2(frequency/440) + 69);
+}
+
+void noteAndOctaveFromMidiNumber(int midiNumber, char note[4])
+{
+    static char notes[24] = {'C',' ','D','b','D',' ','E','b','E',' ','F',' ','G','b','G',' ','A','b','A',' ','B','b','B',' '};
+    static char octaves[7] = {'0','1','2','3','4','5','6'};
+    int index = (midiNumber%12)*2;
+    
+    note[0] = notes[index];
+    note[1] = notes[index+1];
+    note[2] = ' ';
+    note[3] = octaves[(midiNumber / 12) - 1];
+    
+    return;
 }
 
 -(AEAudioControllerAudioCallback)receiverCallback
