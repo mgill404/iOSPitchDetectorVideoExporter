@@ -245,8 +245,10 @@
 
 - (void) videoCreatedAtPath:(NSString *)path
 {
+
     [_videoExporter addAudioFile:@"tones.wav"
                          ToVideo:path
                   withOutputFile:[NSString stringWithFormat:@"final_%@",path]];
+
 }
 @end

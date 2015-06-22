@@ -53,7 +53,7 @@ static void receiverCallback(__unsafe_unretained SSEPitchDetector *THIS,
         {
             pitch = pitchEstimate;
             char note[4];
-            // NSLog(@"Rec. Note: %f", pitch);
+            // NSLog(@"Rexc. Note: %f", pitch);
             noteAndOctaveFromMidiNumber(midiNumberFromFrequency(pitch), note);
             NSLog(@"Rec. Note: %c%c%c%c\n", note[0],note[1],note[2],note[3]);
         }
